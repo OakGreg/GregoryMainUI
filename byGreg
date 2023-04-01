@@ -1,0 +1,46 @@
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+-- Windows
+
+local Window = Rayfield:CreateWindow({
+    Name = "Gregory UI",
+    LoadingTitle = "Welcome to Gregory UI",
+    LoadingSubtitle = "brough to you by our special developers",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Greg UI"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Gregory Ui",
+       Subtitle = "Enter the Key",
+       Note = "Always remember that custom minigames sucks",
+       FileName = "GregUiKey",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "KaPdSgVkYp3s6v9y$B&E)H+MbQeThWmZq4t7w!z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)H@McQfTjWmZq4t7w!z%C*F-JaNdRgUkXp2r5u8x/"
+    }
+ })
+
+
+
+
+ -- Tabs
+
+ local TabMain = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+ -- Buttons
+
+ local Button = TabMain:CreateButton({
+    Name = "Sphere",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OakGreg/Greg-UI/main/Customs",true))();
+    end,
+ })
