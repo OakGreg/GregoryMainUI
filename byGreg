@@ -63,20 +63,20 @@ local TabHubs = Window:CreateTab("Hubs", 4483362458) -- Title, Image
    end,
 })
 
-local Button = TabOther:CreateButton({
+local Button = TabHubs:CreateButton({
    Name = "OrcaHub",
    Callback = function()
    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
    end,
 })
 
-local Button = TabOther:CreateButton({
+local Button = TabHubs:CreateButton({
    Name = "Inf Yield",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
-local Button = TabOther:CreateButton({
+local Button = TabHubs:CreateButton({
    Name = "CMD-X",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
