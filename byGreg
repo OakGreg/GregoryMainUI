@@ -36,11 +36,27 @@ local Window = Rayfield:CreateWindow({
 
  local TabMain = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local TabOther = Window:CreateTab("Other", 4483362458) -- Title, Image
+
  -- Buttons
 
- local Button = TabMain:CreateButton({
+ local SphereButton = TabMain:CreateButton({
     Name = "Sphere",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/OakGreg/Greg-UI/main/Customs",true))();
     end,
  })
+
+ local LagButton = TabMain:CreateButton({
+    Name = "Lagger",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OakGreg/Greg-UI/main/Customs",true))();
+    end,
+ })
+
+ local Button = TabOther:CreateButton({
+   Name = "Destroy UI",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
